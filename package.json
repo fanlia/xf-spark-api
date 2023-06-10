@@ -1,0 +1,19 @@
+{
+  "name": "xf-spark-api",
+  "version": "1.0.0",
+  "description": "讯飞 spark api",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "isomorphic-ws": "^5.0.0",
+    "ws": "^8.13.0",
+    "xf-spark-api": "^1.0.0"
+  }
+}
