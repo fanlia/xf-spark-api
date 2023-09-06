@@ -86,7 +86,7 @@ export class SparkApi {
       ws.onmessage = (e) => {
         const message = JSON.parse(e.data)
         if (message.header.code !== 0) {
-          const e = new Error(message.header.message)
+          const e = new Error(`${message.header.code}: ${message.header.message}`)
           reject(e)
           ws.close()
         } else {
